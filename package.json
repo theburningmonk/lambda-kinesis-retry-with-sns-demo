@@ -1,0 +1,21 @@
+{
+  "name": "lambda-kinesis-retry-with-sns-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.140.0",
+    "serverless": "^1.23.0",
+    "serverless-plugin-lambda-dead-letter": "^1.2.1",
+    "serverless-pseudo-parameters": "^1.2.5"
+  },
+  "dependencies": {
+    "co": "^4.6.0",
+    "lodash": "^4.17.4"
+  }
+}
