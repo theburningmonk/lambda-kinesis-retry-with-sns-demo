@@ -2,7 +2,6 @@ service: kinesis-retry-with-sns
 
 plugins:
   - serverless-pseudo-parameters
-  - serverless-plugin-lambda-dead-letter
 
 provider:
   name: aws
@@ -44,9 +43,6 @@ functions:
     handler: functions/sns.handler
     events:
       - sns: kinesis-retry-with-sns
-    deadLetter: 
-      targetArn:
-        GetResourceArn: DeadLetterQueue
 
 # you can add CloudFormation resource templates here
 resources:
